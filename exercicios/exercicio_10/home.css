@@ -1,0 +1,39 @@
+body { 
+    background-color: aliceblue;
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+   
+   
+}
+button {
+    padding: 8px 15px;
+    background-color: lightblue;
+    color: black;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 13px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="date"]{
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+label {
+    display: block;
+}
+
+
+
