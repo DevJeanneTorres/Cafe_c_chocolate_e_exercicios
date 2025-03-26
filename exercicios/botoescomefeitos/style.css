@@ -1,0 +1,244 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .main {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .effect-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos dos botões */
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Efeitos dos botões */
+  
+  /* Grow */
+  .hvr-grow {
+    background-color: #4CAF50;
+  }
+  
+  .hvr-grow:hover {
+    transform: scale(1.2);
+    background-color: #45a049;
+  }
+  
+  /* Pulse Shrink */
+  .hvr-pulse-shrink {
+    background-color: #2196F3;
+  }
+  
+  .hvr-pulse-shrink:hover {
+    transform: scale(0.95);
+    background-color: #1e88e5;
+  }
+  
+  /* Fade */
+  .hvr-fade {
+    background-color: #f44336;
+  }
+  
+  .hvr-fade:hover {
+    opacity: 0.2;
+  }
+  
+  /* Sweep To Right */
+  .hvr-sweep-to-right {
+    background-color: #9C27B0;
+  }
+  
+  .hvr-sweep-to-right:hover {
+    transform: translateX(50%);
+    background-color: #8e24aa;
+  }
+  
+  /* Icon Back */
+  .hvr-icon-back {
+    background-color: #FF9800;
+    position: relative;
+  }
+  
+  .hvr-icon-back:hover .hvr-icon {
+    transform: translateX(-5px);
+  }
+  
+  .hvr-icon-back .hvr-icon {
+   
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  /* Icon Forward */
+  .hvr-icon-forward {
+    background-color: #00BCD4;
+    position: relative;
+  }
+  
+  .hvr-icon-forward:hover .hvr-icon {
+    transform: translateX(5px);
+  }
+  
+  .hvr-icon-forward .hvr-icon {
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+
+  }
+  
+  /* Border Fade */
+  .hvr-border-fade {
+    background-color: #009688;
+    border: 2px solid transparent;
+    padding: 8px 18px;
+  }
+  
+  .hvr-border-fade:hover {
+    background-color: #00796b;
+    border: 2px solid #fff;
+  }
+  
+  /* Hollow */
+  .hvr-hollow {
+    background-color: transparent;
+    border: 2px solid #3f51b5;
+    color: #3f51b5;
+  }
+  
+  .hvr-hollow:hover {
+    background-color: #3f51b5;
+    color: white;
+  }
+  
+  /* Shadow */
+  .hvr-shadow {
+    background-color: #607d8b;
+  }
+  
+  .hvr-shadow:hover {
+    box-shadow: 0 9px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Glow */
+  .hvr-glow {
+    background-color: #9E9D24;
+  }
+  
+  .hvr-glow:hover {
+    box-shadow: 0 0 30px #ffeb3b;
+  }
+  
+  /* Bubble Top */
+  .hvr-bubble-top {
+    background-color: #ff5722;
+  }
+  
+  .hvr-bubble-top:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Bubble Right */
+  .hvr-bubble-right {
+    background-color: #3f51b5;
+  }
+  
+  .hvr-bubble-right:hover {
+    transform: translateX(10px);
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Curl Top Left */
+  .hvr-curl-top-left {
+    background-color: #673ab7;
+    position: relative;
+  }
+  
+  .hvr-curl-top-left:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 20%;
+    background-color: #512da8;
+    border-radius: 0 0 100% 0;
+  }
+  
+  .hvr-curl-top-left:hover:after {
+    width: 70%;
+    height: 70%;
+  }
+  
+  /* Curl Top Right */
+  .hvr-curl-top-right {
+    background-color: #e91e63;
+    position: relative;
+  }
+  
+  .hvr-curl-top-right:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 20%;
+    background-color: #c2185b;
+    border-radius: 0 0 0 100%;
+  }
+  
+  .hvr-curl-top-right:hover:after {
+    width: 70%;
+    height: 70%;
+  }
+  
+  .hvr-icon {
+    transition: all 0.3s ease;
+}
